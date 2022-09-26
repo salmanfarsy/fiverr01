@@ -1,0 +1,375 @@
+*{
+    --light-grey : #f4f4f4;
+}
+
+header{
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+}
+.search-input{
+    position: relative;
+ 
+}
+.search-input input{
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px 2rem;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.search-icon{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+.brand{
+flex: 1;
+}
+.search{
+flex: 2;
+}
+.icons{
+flex: 1;
+font-size: 1.5rem;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.icons> ion-icon{
+    padding: 15px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user ion-icon{
+    padding: 0 20px;
+}
+ion-icon{
+    cursor: pointer;
+}
+.active-menu{
+ box-shadow: 0px 3px black;
+}
+.plus{
+    background: white;
+    padding: 2px;
+    box-shadow: 0 0 3px dimgrey;
+    border-radius: 5px;
+}
+main{
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 95%;
+  
+}
+.ad-box img{
+    width: 100%;
+    height: 100px;
+
+}
+
+/* .main-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.catagory-container{
+  
+    width: 28%;
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+   
+}
+
+.all-catagories{
+    font-size: 17px;
+    font-weight: 600;
+    height: 300px;
+    overflow: scroll;
+    background: var(--light-grey);
+} */
+.main-container{
+   
+    width: 65%;
+    position: relative;
+ 
+}
+.main-content{
+    position: relative;
+    display: flex;
+    margin: 20px;
+}
+.catagory-container{
+align-self: flex-start;
+position: sticky;
+top: 100px;
+width: 28%;
+}
+.all-catagories{
+    height: 500px;
+    overflow: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.all-catagories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .all-catagories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.catagory-item{
+    position: relative;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.catagory-item span{
+    font-weight: normal;
+    font-size: 12px;
+}
+.catagory-item:hover{
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+.arrow{
+    position: absolute;
+    right: 5px;
+}
+.catagory .title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid dimgray;
+}
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    margin: 10px;
+  
+}
+
+
+.product-text, .product-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-image{
+
+    border-radius: 10px;
+}
+.product-card{
+    padding: 10px;
+    width: 200px;
+    margin: 15px;
+    transition: all 0.5s;
+}
+.pro-card:hover{
+    box-shadow: 0 0 2px 2px rgb(192, 192, 192);
+    cursor: pointer;
+}
+.product-card:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px rgb(204, 204, 204);
+    cursor: pointer;
+}
+.bold{
+font-size: 15px;
+font-weight: 500;
+}
+.small{
+font-size: 12px;
+font-weight: 100;
+}
+.dim{
+
+color: rgb(173, 173, 173);
+}
+.top-viewed{
+    background-color: var(--light-grey);
+}
+.slide-title{
+    border-bottom: 1px solid rgba(209, 209, 209, 0.342);
+}
+.slide-title p{
+    margin: 0;
+    box-shadow: 0 2px 0 black;
+    width: fit-content;
+    padding: 25px;
+    font-size: 20px;
+}
+/* slickbutton */
+.control{
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+.next{
+   
+}
+
+.prev{
+    right: 25px;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.all-product{
+    width: 67%;
+    background-color: var(--light-grey);
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.info-links{
+    width: 30%;
+    background-color: var(--light-grey);
+    padding: 10px;
+   
+}
+.info-links a{
+    border-right: 1px solid black;
+    padding-right: 13px;
+    margin: 5px;
+    font-size: 13px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.head>div{
+    display: flex;
+
+    margin: 0 10px ;
+}
+.head>div>div{
+    margin: 10px;
+}
+
+.pro-card{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+}
+.pro-image{
+    width: 70%;
+    margin: 10px;
+}
+.pro-image img{
+    border-radius: 15px;
+}
+.title-text, .address, .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+.pro-card .more-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: dimgray;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+}
+.cross{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 5%;
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+}
+.cat-icon{
+    width: 25px;
+     vertical-align: middle;
+}
+/* responsive */
+@media screen and (max-width:1000px){
+.info-links{
+    display: none;
+}
+.cat-icon{
+    display: none;
+}
+}
+@media screen and (max-width:750px) {
+    .catagory-container{
+        display: none;
+    }
+    .cross{
+        display: block;
+    }
+    .all-product{
+        width: 100%;
+    }
+    .pro-image{
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px){
+.icons{
+    background-color: var(--light-grey);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.search {
+    flex: 100%;
+    padding: 10px;
+}
+header{
+    flex-wrap: wrap;
+}
+.menu-icon{
+    display: block;
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    font-size: 20px;
+}
+}
+.on{
+    position: fixed;
+    display: block;
+    top: 15%;
+    /* height: 100%; */
+    background:var(--light-grey);
+    width: 90%;
+    z-index: 1000;
+}
+.on .info-links{
+    display: block;
+}
